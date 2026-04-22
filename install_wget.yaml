@@ -3,6 +3,6 @@
   become: yes
   tasks:
     - name: Install wget
-      yum:
+      apt:
         name: wget
         state: present
