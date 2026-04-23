@@ -1,0 +1,8 @@
+---
+ - hosts: 13.233.232.159
+   become: yes
+   tasks:
+     - name: copying the files
+       copy:
+       scr: hello.txt
+       dest: hello.txt
