@@ -4,5 +4,5 @@
    tasks:
      - name: copying the files
        copy:
-       scr: hello.txt
-       dest: hello.txt
+         src: hello.txt
+         dest: hello.txt
