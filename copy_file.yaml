@@ -5,4 +5,5 @@
      - name: copying the files
        copy:
          src: /home/master/hello.txt
-         dest: hello.txt
+         dest: /home/ubuntu/hello.txt
+         remote_src: yes
