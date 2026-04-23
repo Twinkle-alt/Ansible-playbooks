@@ -4,5 +4,5 @@
    tasks:
      - name: copying the files
        copy:
-         src: hello.txt
+         src: /home/master/hello.txt
          dest: hello.txt
