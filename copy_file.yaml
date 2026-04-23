@@ -1,5 +1,5 @@
 ---
- - hosts: 13.233.232.159
+ - hosts: ec2-13-233-232-159.ap-south-1.compute.amazonaws.com
    become: yes
    tasks:
      - name: copying the files
