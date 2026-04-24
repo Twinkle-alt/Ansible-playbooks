@@ -1,5 +1,5 @@
 ---
- - hosts: all
+ - hosts: "{{ deployment_host}}"
    become: yes
    tasks:
      - name: Download hello.txt
