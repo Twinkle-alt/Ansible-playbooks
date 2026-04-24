@@ -1,5 +1,5 @@
 ---
- - hosts: ec2-13-233-232-159.ap-south-1.compute.amazonaws.com
+ - hosts: all
    become: yes
    tasks:
      - name: Download hello.txt
