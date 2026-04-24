@@ -2,8 +2,12 @@
  - hosts: ec2-13-233-232-159.ap-south-1.compute.amazonaws.com
    become: yes
    tasks:
-     - name: copying the files
-       copy:
-         src: /home/master/hello.txt
-         dest: /home/ubuntu/hello.txt
-         remote_src: yes
+     - name: Download hello.txt
+       get_url:
+        url: https://github.com/Twinkle-alt/Ansible-playbooks/blob/main/hello.txt
+        dest: /home/ubuntu/
+     # - name: copying the files
+     #   copy:
+     #     src: /home/master/hello.txt
+     #     dest: /home/ubuntu/hello.txt
+     #     remote_src: yes
