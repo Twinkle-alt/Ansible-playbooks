@@ -1,6 +1,8 @@
 ---
  - name: print
    hosts: "{{ deployment_host }}"
+   gather_facts: no
+   become: yes
    tasks:
      - name: printing the msg
        debug:
