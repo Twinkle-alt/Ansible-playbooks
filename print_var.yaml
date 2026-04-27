@@ -5,5 +5,5 @@
    tasks:
      - name: printing variable
        debug:
-         msg: "this is host name: {{ inventory_hostname}}"
+#         msg: "this is host name: {{ inventory_hostname}}"
          var: inventory_hostname
