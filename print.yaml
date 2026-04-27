@@ -4,4 +4,4 @@
    tasks:
      - name: printing the msg
        debug:
-         msg= " welcome to ansible playbooks"
+         msg: "welcome to ansible playbooks"
