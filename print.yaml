@@ -1,7 +1,7 @@
 ---
  - name: print
    hosts: "{{ deployment_host}}"
-   become: true
+   become: yes
    tasks:
      - name: printing the msg
        debug:
