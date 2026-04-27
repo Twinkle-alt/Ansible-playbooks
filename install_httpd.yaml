@@ -1,2 +1,12 @@
 ---
- - hosts: {{ deployment_host}}
+ - name: play to install httpd(apache2) and wget packages
+   hosts: "{{ deployment_host}}"
+   become: yes
+   tasks:
+     - name: install apache2 and wget
+       apt:
+         name:
+           - apache2
+           - wget
+         state: present
+        
