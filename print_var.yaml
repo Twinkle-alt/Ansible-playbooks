@@ -1,0 +1,9 @@
+---
+ - name: usage or printing variable value
+   hosts: "{{ deployment_host}}"
+   become: yes
+   tasks:
+     - name: printing variable
+       debug:
+         msg: "this is host name: {{ inventory_hostname}}"
+         var: inventory_hostname
