@@ -1,0 +1,12 @@
+---
+ - name: verbosity
+   hosts: "{{ deployment_host}}"
+   become: yes
+   tasks:
+     - name: verbosity
+       debug:
+         msg: " this is default msg "
+     - name: verbosity 2
+       debug:
+         msg: " this is 2 "
+         verbosity: 2
