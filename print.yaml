@@ -1,0 +1,7 @@
+---
+ - name: print
+   hosts: "{{ deployment_host}}"
+   tasks:
+     - name: printing the msg
+       debug:
+         msg= " welcome to ansible playbooks"
