@@ -1,0 +1,5 @@
+---
+ - hosts: "{{deployment_host}}"
+   tasks:
+     - shell:
+          bash --version
