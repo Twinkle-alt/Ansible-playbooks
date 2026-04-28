@@ -2,8 +2,8 @@
  - hosts: "{{deployment_host}}"
    tasks:
      - shell:
-          bash --version
+       bash --version
        register: bash_version
      - name: printing output
-     debug:
-       var: bash_version
+       debug:
+         var: bash_version
