@@ -1,12 +1,14 @@
 ---
- - hosts: "{{deployment_host}}"
-   vars:
-     pakgs:
-       - 'vim'
-       - 'nano'
-       - 'apache2'
-       - 'nginx'
-     gather_facts: false
-     tasks:
-       - debug:
-           var: pakgs
+- hosts: "{{ deployment_host }}"
+  gather_facts: false
+
+  vars:
+    pakgs:
+      - vim
+      - nano
+      - apache2
+      - nginx
+
+  tasks:
+    - debug:
+        var: pakgs
