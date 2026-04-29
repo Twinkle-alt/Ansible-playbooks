@@ -1,0 +1,15 @@
+---
+ - hosts: "{{ deployment_host}}"
+   vars:
+     x: 24
+     my_name: "Twinkle"
+   vars_prompt:
+     name: y
+     prompt: Enter the value for y
+   gather_facts: false
+   tasks:
+     - debug:
+         msg:
+          - " the x value is: {{x}}"
+          - " the name value is: {{my_name}}"
+          - " the value of y: {{y}}"
