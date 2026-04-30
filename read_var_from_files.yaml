@@ -1,6 +1,7 @@
 ---
  - hosts: "{{deployment_host}}"
    vars_files: variable_values.yaml
+   gather_facts: false
    tasks:
      - debug:
          var: pkgs
