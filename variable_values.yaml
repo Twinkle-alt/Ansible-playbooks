@@ -1,0 +1,5 @@
+---
+ x: 25
+ y: 65
+ pkgs:
+   - " linux" : "httpd"
